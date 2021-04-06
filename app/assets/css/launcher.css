@@ -503,6 +503,16 @@ body, button {
     font-weight: bold;
 }
 
+#loginNonPremium {
+    font-family: 'Avenir Medium';
+    margin-bottom: 15px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 0px 1px black;
+    color: red;
+}
+
 /* Container to organize login field elements. */
 .loginFieldContainer {
     position: relative;
@@ -1233,25 +1243,33 @@ input:checked + .toggleSwitchSlider:before {
     height: 30px;
 }
 
-/* File selection button. */
-.settingsFileSelButton {
-    border: 0px;
+/* File input for file selection. */
+.settingsFileSelSel {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+.settingsFileSelSel::-webkit-file-upload-button {
+    display: none;
+}
+
+/* Wrapper label to add a custom style to the file input. */
+.settingsFileSelLabel {
+    border-left: 0px;
     border-radius: 0px 3px 3px 0px;
     font-size: 12px;
     padding: 0px 5px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
     background: rgba(126, 126, 126, 0.57);
     transition: 0.25s ease;
     white-space: nowrap;
-    outline: none;
 }
-.settingsFileSelButton:hover,
-.settingsFileSelButton:focus {
+.settingsFileSelLabel:hover,
+.settingsFileSelLabel:focus,
+.settingsFileSelSel:focus ~ #settingsJavaExecLabel {
     text-shadow: 0px 0px 20px white;
-}
-.settingsFileSelButton:active {
-    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75);
-    color: rgba(255, 255, 255, 0.75);
 }
 
 /* Description for the file selector. */
@@ -2668,7 +2686,7 @@ input:checked + .toggleSwitchSlider:before {
     height: 70px;
     width: auto;
     position: relative;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     box-sizing: border-box;
     border-radius: 50%;
 }
@@ -2678,7 +2696,7 @@ input:checked + .toggleSwitchSlider:before {
     position: relative;
     height: 70px;
     width: 70px;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     margin-top: 50px;
 }
 

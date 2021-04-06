@@ -18,10 +18,10 @@ function getCurrentPlatform(){
 builder.build({
     targets: (process.argv[2] != null && Platform[process.argv[2]] != null ? Platform[process.argv[2]] : getCurrentPlatform()).createTarget(),
     config: {
-        appId: 'helioslauncher',
-        productName: 'Helios Launcher',
+        appId: 'pokedraftlauncher',
+        productName: 'PokeDraftLauncher',
         artifactName: '${productName}-setup-${version}.${ext}',
-        copyright: 'Copyright © 2018-2020 Daniel Scalzi',
+        copyright: 'Helios Launcher Copyright © 2018-2020 Daniel Scalzi & Modified for MonCraft by CanExiOne',
         directories: {
             buildResources: 'build',
             output: 'dist'
@@ -47,7 +47,7 @@ builder.build({
         linux: {
             target: 'AppImage',
             maintainer: 'Daniel Scalzi',
-            vendor: 'Daniel Scalzi',
+            vendor: 'PokeDraft',
             synopsis: 'Modded Minecraft Launcher',
             description: 'Custom launcher which allows users to join modded servers. All mods, configurations, and updates are handled automatically.',
             category: 'Game'
