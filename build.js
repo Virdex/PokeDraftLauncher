@@ -21,7 +21,7 @@ builder.build({
         appId: 'pokedraftlauncher',
         productName: 'PokeDraftLauncher',
         artifactName: '${productName}-setup-${version}.${ext}',
-        copyright: 'Helios Launcher Copyright © 2018-2020 Daniel Scalzi & Modified for MonCraft by CanExiOne',
+        copyright: 'Helios Launcher Copyright © 2018-2020 Daniel Scalzi & Modified for PokeDraft by CanExiOne',
         directories: {
             buildResources: 'build',
             output: 'dist'

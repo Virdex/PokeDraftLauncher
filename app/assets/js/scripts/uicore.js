@@ -49,7 +49,7 @@ if(!isDev){
                 loggerAutoUpdaterSuccess.log('New update available', info.version)
                 
                 if(process.platform === 'darwin'){
-                    info.darwindownload = `https://github.com/Virdex/PokeDraftLauncher/releases/download/v${info.version}/moncraftlauncher-${info.version}.dmg`
+                    info.darwindownload = `https://github.com/Virdex/PokeDraftLauncher/releases/download/v${info.version}/pokedraftlauncher-${info.version}.dmg`
                     showUpdateUI(info)
                 }
                 
